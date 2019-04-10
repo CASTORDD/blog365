@@ -1,0 +1,65 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav {
+  &-item {
+    width: auto;
+    display: inline-block;
+  }
+  
+  &-link {
+    color:#9b9b9b;
+  }
+  &__right {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+.redes {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  .red {
+    &__item {
+      display: inline-block;
+    }
+    &__link {
+      color: #9b9b9b;
+      display: inline-block;
+      padding: 30px;
+    }
+  } 
+}
+@media (min-width: 768px) {
+  .redes {
+    width: auto;
+    padding: 0 0 0 25px;
+    .red {
+      &__link {
+        padding: 10px;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 0px;
+      width: 1px;
+      height: 15px;
+      display: inline-block;
+      background-color: #CCC;
+    }
+  }
+}
+
+article {
+  &.post {
+    text-align: center;
+  }
+}

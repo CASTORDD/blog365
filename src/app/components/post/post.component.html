@@ -1,0 +1,26 @@
+<h1>Post</h1>
+<article class="post">
+  <h2>{{ post.title }}</h2>
+  <ul class="post__info">
+    <li>
+        Destination Europe
+    </li>
+    <li>
+      Added by: <span>{{ post.userId}}</span>
+    </li>
+    <li>
+      Juanary 01, 2018
+    </li>
+  </ul>
+  <img src="" alt="">
+  <p>{{ post.body }}</p>
+</article>
+<section>
+  <div class="float-left">
+      <a routerLink="/post/{{ post.id - 1}}">previous article</a>
+  </div>
+  <div class="float-right">
+      <a routerLink="/post/{{ post.id + 1}}">next article</a>
+  </div>
+</section>
+    

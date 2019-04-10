@@ -1,0 +1,19 @@
+<h1>Lista de posts</h1>
+
+<article class="post" *ngFor="let post of posts">
+  <h2>{{ post.title }}</h2>
+  <ul class="post__info">
+    <li>
+        Destination Europe
+    </li>
+    <li>
+      Added by: <span>{{ post.userId}}</span>
+    </li>
+    <li>
+      Juanary 01, 2018
+    </li>
+  </ul>
+  <img src="" alt="">
+  <p>{{ post.body }}</p>
+  <a routerLink="/post/{{ post.id }}">READ MORE</a>
+</article>
